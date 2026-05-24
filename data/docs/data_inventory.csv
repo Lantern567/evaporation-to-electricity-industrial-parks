@@ -1,0 +1,11 @@
+category,source,provider,url_or_access,expected_files,status,notes
+meteorology,逐日蒸发皿蒸发量与气象站数据,中国气象局国家气象信息中心,manual_download,station_daily_evaporation_weather,planned,用于构建县域和园区尺度 EDI
+meteorology,ERA5 再分析数据,ECMWF / Copernicus Climate Data Store,https://cds.climate.copernicus.eu/,era5_temperature_wind_radiation_precipitation,planned,用于补充空间插值和气象控制变量
+industry,中国生态环境统计年报,生态环境部,manual_download,industrial_wastewater_statistics,planned,用于省份和行业废水量校准
+industry,全国排污许可证,全国排污许可证管理信息平台,manual_download,pollution_permit_records,planned,用于企业和园区水量、行业与位置匹配
+industry,重点排污单位名录,地方生态环境部门,manual_download,key_polluting_unit_registry,planned,用于识别企业和园区点位
+parks,国家级零碳园区建设名单,国家发展改革委 / 工业和信息化部 / 国家能源局,manual_download,zero_carbon_park_list,planned,用于零碳园区样本和压力测试
+energy,分省电价和绿电交易价格,公开政策与交易平台,manual_collection,provincial_electricity_green_power_prices,planned,用于成本核算
+carbon,电网排放因子,生态环境部或公开核算资料,manual_collection,grid_emission_factors,planned,用于碳排核算
+technology,MVR 膜浓缩 蒸发结晶 储能 余热利用技术经济参数,文献 环评 项目案例,manual_collection,technology_cost_performance_parameters,planned,用于工程放大和优化模型
+

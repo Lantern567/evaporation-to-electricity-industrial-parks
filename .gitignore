@@ -1,0 +1,37 @@
+# Local Word drafts and generated documents
+*.doc
+*.docx
+
+# Temporary Office files
+~$*
+.~lock.*
+
+# Local DOCX processing workspace
+work_docx/
+
+# Large or regenerated data files
+data/raw/*
+!data/raw/README.md
+data/external/*
+!data/external/README.md
+data/interim/*
+!data/interim/README.md
+data/processed/*
+!data/processed/README.md
+data/outputs/*
+!data/outputs/README.md
+
+# Python/cache artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
