@@ -139,7 +139,7 @@ UEC = UEC0(process) * climate_factor(T) * scale_factor(Q)
 
 ## 主要来源
 
-- 任务书：`蒸发水能碳_四任务计算书.pdf`，§2.4-§2.7。
+- 任务书：[`task2_calculation_book.pdf`](task2_calculation_book.pdf)，§2.4-§2.7。
 - 电力因子：https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202512/W020251231726284332528.pdf
 - O'Connell et al. (2024)：https://doi.org/10.1038/s44221-024-00327-1
 - WaterTAP MVC：https://watertap.readthedocs.io/en/stable/technical_reference/flowsheets/mvc.html

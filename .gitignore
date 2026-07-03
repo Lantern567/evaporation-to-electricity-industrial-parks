@@ -1,25 +1,9 @@
-# Local Word drafts and generated documents
+# Temporary Office files and local drafts
 *.doc
 *.docx
-
-# Temporary Office files
 ~$*
 .~lock.*
-
-# Local DOCX processing workspace
 work_docx/
-
-# Large or regenerated data files
-data/raw/*
-!data/raw/README.md
-data/external/*
-!data/external/README.md
-data/interim/*
-!data/interim/README.md
-data/processed/*
-!data/processed/README.md
-data/outputs/*
-!data/outputs/README.md
 
 # Python/cache artifacts
 __pycache__/
@@ -34,4 +18,3 @@ venv/
 Thumbs.db
 *.swp
 *.swo
-
