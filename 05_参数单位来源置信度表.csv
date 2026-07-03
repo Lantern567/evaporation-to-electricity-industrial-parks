@@ -1,0 +1,91 @@
+﻿module,scenario_id,parameter_id,value,unit,source,confidence,notes
+type_i_net_evaporation,estimated_lower,kp_free_water,0.7,fraction,Task 2 calculation book range,medium,
+type_i_net_evaporation,estimated_lower,f_sal,0.94,fraction,Task 2 calculation book range,medium,
+type_i_shadow,estimated_lower,mvr_equivalent_sec,15.0,kWh/m3,Task 2 calculation book SEC staircase,medium,"Technical upper-bound substitute, not observed municipal route"
+energy_cost,estimated_lower,electricity_price,0.45,CNY/kWh,declared engineering scenario,low,Held constant over 1984-2024
+type_i_net_evaporation,estimated_base,kp_free_water,0.75,fraction,Task 2 calculation book range,medium,
+type_i_net_evaporation,estimated_base,f_sal,1.0,fraction,Task 2 calculation book range,medium,
+type_i_shadow,estimated_base,mvr_equivalent_sec,20.0,kWh/m3,Task 2 calculation book SEC staircase,medium,"Technical upper-bound substitute, not observed municipal route"
+energy_cost,estimated_base,electricity_price,0.65,CNY/kWh,declared engineering scenario,low,Held constant over 1984-2024
+type_i_net_evaporation,estimated_upper,kp_free_water,0.8,fraction,Task 2 calculation book range,medium,
+type_i_net_evaporation,estimated_upper,f_sal,1.0,fraction,Task 2 calculation book range,medium,
+type_i_shadow,estimated_upper,mvr_equivalent_sec,25.0,kWh/m3,Task 2 calculation book SEC staircase,medium,"Technical upper-bound substitute, not observed municipal route"
+energy_cost,estimated_upper,electricity_price,0.9,CNY/kWh,declared engineering scenario,low,Held constant over 1984-2024
+type_ii_inputs,estimated_favorable,q_brine_multiplier,0.5,fraction,declared engineering scenario,low,
+type_ii_inputs,estimated_favorable,available_land_fraction,0.02,fraction of park context area,declared engineering scenario,low,Park area is not treated as all available land
+type_ii_net_evaporation,estimated_favorable,kp_free_water,0.8,fraction,Task 2 calculation book range,medium,
+type_ii_inputs,estimated_base,q_brine_multiplier,1.0,fraction,declared engineering scenario,low,
+type_ii_inputs,estimated_base,available_land_fraction,0.005,fraction of park context area,declared engineering scenario,low,Park area is not treated as all available land
+type_ii_net_evaporation,estimated_base,kp_free_water,0.75,fraction,Task 2 calculation book range,medium,
+type_ii_inputs,estimated_stress,q_brine_multiplier,2.0,fraction,declared engineering scenario,low,
+type_ii_inputs,estimated_stress,available_land_fraction,0.001,fraction of park context area,declared engineering scenario,low,Park area is not treated as all available land
+type_ii_net_evaporation,estimated_stress,kp_free_water,0.7,fraction,Task 2 calculation book range,medium,
+pond_cost,low,discount_rate,0.04,fraction/year,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,low,asset_lifetime_year,25,year,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,low,land_cost_cny_m2,50.0,CNY/m2,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,low,liner_capex_cny_m2,60.0,CNY/m2,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,low,opex_cny_m2_year,5.0,CNY/(m2 year),engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,low,pump_sec_kwh_m3,0.05,kWh/m3,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,base,discount_rate,0.06,fraction/year,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,base,asset_lifetime_year,20,year,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,base,land_cost_cny_m2,200.0,CNY/m2,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,base,liner_capex_cny_m2,120.0,CNY/m2,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,base,opex_cny_m2_year,12.0,CNY/(m2 year),engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,base,pump_sec_kwh_m3,0.1,kWh/m3,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,high,discount_rate,0.08,fraction/year,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,high,asset_lifetime_year,15,year,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,high,land_cost_cny_m2,800.0,CNY/m2,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,high,liner_capex_cny_m2,240.0,CNY/m2,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,high,opex_cny_m2_year,25.0,CNY/(m2 year),engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+pond_cost,high,pump_sec_kwh_m3,0.2,kWh/m3,engineering scenario calibrated to published EP cost range,low,O'Connell supplementary range: 0.78-9.97 USD_2018/m3 brine; local CNY values remain scenarios
+mechanical_surrogate,low,sec_ro_kwh_m3,1.5,kWh/m3,Task 2 SEC staircase; WaterTAP surrogate v0,medium,
+mechanical_surrogate,low,sec_mvr_kwh_m3,15.0,kWh/m3,Task 2 SEC staircase; WaterTAP surrogate v0,medium,
+mechanical_surrogate,low,sec_crystallizer_kwh_m3,50.0,kWh/m3,Task 2 SEC staircase; WaterTAP surrogate v0,medium,
+mechanical_surrogate,low,nonenergy_ro_cny_m3,5.0,CNY/m3,declared WaterTAP non-energy cost surrogate v0,low,
+mechanical_surrogate,low,nonenergy_mvr_cny_m3,15.0,CNY/m3,declared WaterTAP non-energy cost surrogate v0,low,
+mechanical_surrogate,low,nonenergy_crystallizer_cny_m3,35.0,CNY/m3,declared WaterTAP non-energy cost surrogate v0,low,
+mechanical_surrogate,low,nonelectric_carbon_kg_m3,0.05,kgCO2e/m3,declared non-electric carbon scenario,low,
+mechanical_surrogate,base,sec_ro_kwh_m3,3.75,kWh/m3,Task 2 SEC staircase; WaterTAP surrogate v0,medium,
+mechanical_surrogate,base,sec_mvr_kwh_m3,20.0,kWh/m3,Task 2 SEC staircase; WaterTAP surrogate v0,medium,
+mechanical_surrogate,base,sec_crystallizer_kwh_m3,60.0,kWh/m3,Task 2 SEC staircase; WaterTAP surrogate v0,medium,
+mechanical_surrogate,base,nonenergy_ro_cny_m3,4.0,CNY/m3,declared WaterTAP non-energy cost surrogate v0,low,
+mechanical_surrogate,base,nonenergy_mvr_cny_m3,15.0,CNY/m3,declared WaterTAP non-energy cost surrogate v0,low,
+mechanical_surrogate,base,nonenergy_crystallizer_cny_m3,40.0,CNY/m3,declared WaterTAP non-energy cost surrogate v0,low,
+mechanical_surrogate,base,nonelectric_carbon_kg_m3,0.25,kgCO2e/m3,declared non-electric carbon scenario,low,
+mechanical_surrogate,high,sec_ro_kwh_m3,6.0,kWh/m3,Task 2 SEC staircase; WaterTAP surrogate v0,medium,
+mechanical_surrogate,high,sec_mvr_kwh_m3,25.0,kWh/m3,Task 2 SEC staircase; WaterTAP surrogate v0,medium,
+mechanical_surrogate,high,sec_crystallizer_kwh_m3,70.0,kWh/m3,Task 2 SEC staircase; WaterTAP surrogate v0,medium,
+mechanical_surrogate,high,nonenergy_ro_cny_m3,8.0,CNY/m3,declared WaterTAP non-energy cost surrogate v0,low,
+mechanical_surrogate,high,nonenergy_mvr_cny_m3,28.0,CNY/m3,declared WaterTAP non-energy cost surrogate v0,low,
+mechanical_surrogate,high,nonenergy_crystallizer_cny_m3,80.0,CNY/m3,declared WaterTAP non-energy cost surrogate v0,low,
+mechanical_surrogate,high,nonelectric_carbon_kg_m3,0.8,kgCO2e/m3,declared non-electric carbon scenario,low,
+process_uec,low,uec0_high_pond_lagoon,0.05,kWh/m3,process-class engineering scenario,low,"Reference at 20 C and 10,000 m3/day"
+process_uec,low,uec0_medium_oxidation_sbr,0.3,kWh/m3,process-class engineering scenario,low,"Reference at 20 C and 10,000 m3/day"
+process_uec,low,uec0_low_conventional,0.2,kWh/m3,process-class engineering scenario,low,"Reference at 20 C and 10,000 m3/day"
+process_uec,base,uec0_high_pond_lagoon,0.15,kWh/m3,process-class engineering scenario,low,"Reference at 20 C and 10,000 m3/day"
+process_uec,base,uec0_medium_oxidation_sbr,0.5,kWh/m3,process-class engineering scenario,low,"Reference at 20 C and 10,000 m3/day"
+process_uec,base,uec0_low_conventional,0.35,kWh/m3,process-class engineering scenario,low,"Reference at 20 C and 10,000 m3/day"
+process_uec,high,uec0_high_pond_lagoon,0.3,kWh/m3,process-class engineering scenario,low,"Reference at 20 C and 10,000 m3/day"
+process_uec,high,uec0_medium_oxidation_sbr,0.8,kWh/m3,process-class engineering scenario,low,"Reference at 20 C and 10,000 m3/day"
+process_uec,high,uec0_low_conventional,0.6,kWh/m3,process-class engineering scenario,low,"Reference at 20 C and 10,000 m3/day"
+process_uec,all,theta,1.072,dimensionless,Task 2 calculation book / declared base assumption,medium,
+process_uec,all,aeration_share,0.6,fraction,Task 2 calculation book / declared base assumption,medium,
+process_uec,all,scale_exponent,0.9,dimensionless,Task 2 calculation book / declared base assumption,low,
+process_uec,all,reference_flow,10000.0,m3/day,Task 2 calculation book / declared base assumption,medium,
+mechanical_surrogate,all,ro_tds_limit,70000,mg/L,Task 2 rule / declared surrogate v0,medium,
+mechanical_surrogate,all,ro_recovery_cap,0.65,fraction of feed,Task 2 rule / declared surrogate v0,low,
+mechanical_surrogate,all,mvr_recovery_cap_of_remaining,0.7,fraction of post-RO flow,Task 2 rule / declared surrogate v0,low,
+mechanical_surrogate,all,mechanical_sec_scale_exponent,-0.03,dimensionless,Task 2 rule / declared surrogate v0,low,
+mechanical_surrogate,all,mechanical_cost_scale_exponent,-0.1,dimensionless,Task 2 rule / declared surrogate v0,low,
+type_ii_net_evaporation,all,f_sal_tds_le_20g_l,0.94,fraction,Task 2 f_sal range converted to declared TDS bins,low,"TDS <= 20,000 mg/L"
+type_ii_net_evaporation,all,f_sal_tds_le_50g_l,0.85,fraction,Task 2 f_sal range converted to declared TDS bins,low,"20,000 < TDS <= 50,000 mg/L"
+type_ii_net_evaporation,all,f_sal_tds_le_100g_l,0.72,fraction,Task 2 f_sal range converted to declared TDS bins,low,"50,000 < TDS <= 100,000 mg/L"
+type_ii_net_evaporation,all,f_sal_tds_gt_100g_l,0.5,fraction,Task 2 f_sal range converted to declared TDS bins,low,"TDS > 100,000 mg/L"
+pond_cost,all,land_cost_multiplier_high_land_provinces,1.3,dimensionless,declared regional engineering scenario,low,
+pond_cost,all,land_cost_multiplier_western_low_land_provinces,0.5,dimensionless,declared regional engineering scenario,low,
+pond_cost,all,land_cost_multiplier_other_provinces,0.8,dimensionless,declared regional engineering scenario,low,
+pond_feasibility,all,pond_e_net_min,1.0,m/year,Task 2 calculation book provisional threshold,low,
+pond_feasibility,all,pond_rh_max,0.6,fraction,Task 2 calculation book provisional threshold,low,
+pond_feasibility,all,pond_precip_max,0.3,m/year,Task 2 calculation book provisional threshold,low,
+pond_feasibility,all,pond_area_intensity_max,2.0,m2/(m3/year),Task 2 calculation book provisional threshold,low,
+carbon,province,grid_emission_factor_2023,see province_grid_emission_factor_2023.csv,kgCO2/kWh,MEE and National Bureau of Statistics 2023 provincial factors,high,https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202512/W020251231726284332528.pdf

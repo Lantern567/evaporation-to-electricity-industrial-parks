@@ -1,0 +1,33 @@
+﻿output_file,field,unit,meaning,formula_or_source,confidence,caveat
+type_i_facility_year_estimated_accounting_v1.csv,e_net_m_year,m/year,逐设施净蒸发深度,Kp*PEV*f_sal-P,low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,v_net_m3_year,m3/year,带符号净蒸发水量,A_exp*E_net,low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,v_service_m3_year,m3/year,非负自然蒸发服务量,"A_exp*max(E_net,0)",low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,edi,dimensionless,相对1991-2020基准的蒸发亏缺指数,(E_base-E_year)/E_base,low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,pond_unit_cost_cny_m3,CNY/m3,同等新建塘单位成本,annualized_area_cost/E_net+pump_SEC*price,low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,mechanical_substitute_sec_kwh_m3,kWh/m3,MVR等效机械替代比电耗,Task 2 SEC staircase,medium,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,pi_electricity_kwh_m3,kWh/m3,蒸发服务电力影子价格,SEC_mech,medium,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,pi_carbon_kgco2_m3,kgCO2/m3,蒸发服务碳影子价格,SEC_mech*grid_factor,medium,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,pi_cost_cny_m3,CNY/m3,有符号净成本影子价格,c_mech-c_pond,low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,shadow_gross_mechanical_cost_cny_year,CNY/year,按机械替代总成本估值的年度服务价值,V_service*c_mech,low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,shadow_net_cost_difference_cny_year,CNY/year,扣除塘成本后的有符号年度差额,V_service*(c_mech-c_pond),low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,process_uec_kwh_m3,kWh/m3,估算工艺单位电耗,UEC0*temperature_factor*scale_factor,low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,process_electricity_kwh_year,kWh/year,污水处理过程年度电耗,UEC*annual_wastewater,low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,process_electricity_cost_cny_year,CNY/year,污水处理过程年度电费,process_electricity*price,low,Engineering estimate; not facility observation
+type_i_facility_year_estimated_accounting_v1.csv,process_electricity_carbon_tco2_year,tCO2/year,污水处理过程电力碳排放,process_electricity*grid_factor/1000,medium,Engineering estimate; not facility observation
+type_ii_estimated_input_v1.csv,q_brine_m3_year,m3/year,估算浓盐水年量,park companies*high-salt share*unit brine*scenario multiplier,low,Synthetic candidate component; replace with EIA/permit data
+type_ii_estimated_input_v1.csv,tds_mg_l,mg/L,估算浓盐水总溶解固体,industry scenario,low,Synthetic candidate component; replace with EIA/permit data
+type_ii_estimated_input_v1.csv,target_recovery_fraction,fraction,目标水回收率,industry scenario,low,Synthetic candidate component; replace with EIA/permit data
+type_ii_estimated_input_v1.csv,max_contiguous_land_area_m2,m2,估算最大连片可用土地,park context area*available land fraction,low,Synthetic candidate component; replace with EIA/permit data
+type_ii_facility_year_estimated_disposal_v1.csv,e_net_m_year,m/year,高盐水净蒸发深度,Kp*PEV*f_sal-P,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,pond_area_intensity_m2_per_m3yr,m2/(m3/year),单位浓盐水量所需塘面积,1/E_net,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,pond_area_m2,m2,所需蒸发塘面积,Q_brine/E_net,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,pond_unit_cost_cny_m3,CNY/m3,塘单位处置成本,annualized_area_cost/E_net+pump_SEC*price,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,pond_unit_carbon_kgco2_m3,kgCO2/m3,塘单位泵送碳排放,pump_SEC*grid_factor,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,mechanical_sec_kwh_m3,kWh/m3,机械路线代理比电耗,weighted RO/MVR/crystallizer surrogate,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,mechanical_unit_cost_cny_m3,CNY/m3,机械路线单位成本,SEC*price+nonenergy_cost,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,mechanical_unit_carbon_kgco2_m3,kgCO2/m3,机械路线单位碳排放,SEC*grid_factor+non-electric carbon,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,selected_route,category,成本约束下选择的可行路线,pond if feasible and cheaper; otherwise mechanical,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,selected_unit_cost_cny_m3,CNY/m3,所选路线单位成本,route selection output,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,selected_unit_carbon_kgco2_m3,kgCO2/m3,所选路线单位碳排放,route selection output,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,annual_cost_cny_year,CNY/year,所选路线年度成本,unit_cost*Q_brine,low,Candidate scenario; WaterTAP surrogate v0
+type_ii_facility_year_estimated_disposal_v1.csv,annual_carbon_tco2_year,tCO2/year,所选路线年度碳排放,unit_carbon*Q_brine/1000,low,Candidate scenario; WaterTAP surrogate v0
